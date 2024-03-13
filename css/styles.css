@@ -9,29 +9,36 @@ header, nav, section, footer {
     margin: 30px;
     padding: 10px;
     border: 1px solid #525252;
+    border-radius: 5px;
 }
 
-nav ul {
+#menu ul {
     list-style-type: none;
     padding: 0;
     text-align: right;
     color: #F2F2F2;
 }
 
-nav li {
+#menu li {
     display: inline;
-    margin-right: 10px;
-    color: #F2F2F2;
+    margin-right: 30px;
 }
 
-nav img {
+#menu li a {
+    display: inline-block;
+    color: #F2F2F2;
+    text-decoration: none;
+    transition: background .3;
+}
+
+#menu img {
     width: 40px;
     height: 40px;
-    margin-right: 400px;
-    border-radius: 15%;
-    position: fixed;
-    top: 45px;
-    left: 55px;
+    margin-right: 1270px;
+}
+
+#menu li a:hover {
+    color: #76283C;
 }
 
 section, footer {
@@ -39,27 +46,22 @@ section, footer {
     display: block;
 }
 
+p {
+    margin: 30px; 
+    color: #F2F2F2;
+}
+
 a {
     text-decoration: none;
     color: #F2F2F2;
 }
 
-footer {
-    margin-top: 20px;
-    text-align: center;
-    color: #F2F2F2;
-}
-
 .card {
     background-color: #272629;
-    display: inline-flex;
     margin: 30px;
     padding: 10px;
     border: 1px solid #525252;
     border-radius: 5px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     width: 272px;
     height: 300px;
     color: #F2F2F2;
@@ -70,4 +72,17 @@ footer {
 .card li {
     list-style-type: none;
     margin: 5px 0;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #F2F2F2;
+    background-color: #272629;
+}
+
+footer img {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
 }
